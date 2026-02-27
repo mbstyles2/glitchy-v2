@@ -3,10 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quick Links</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        a {
+            display: block;
+            padding: 16px 24px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            border-radius: 12px;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        a:hover {
+            background: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        a:active {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Optional: different colors for each link */
+        a[href="goody.html"] {
+            background: #27ae60;
+        }
+
+        a[href="goody.html"]:hover {
+            background: #219653;
+        }
+
+        a[href="digifrank.html"] {
+            background: #e74c3c;
+        }
+
+        a[href="digifrank.html"]:hover {
+            background: #c0392b;
+        }
+
+        footer {
+            margin-top: 2.5rem;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+    </style>
 </head>
 <body>
-    <a href="goody.html">goody</a>
-    <a href="digifrank.html">df</a>
+
+    <div class="container">
+        <h1>Quick Access</h1>
+
+        <div class="links">
+            <a href="goody.html">Goody</a>
+            <a href="digifrank.html">DigiFrank (df)</a>
+        </div>
+
+        <footer>Made simple • 2026</footer>
+    </div>
+
 </body>
 </html>
